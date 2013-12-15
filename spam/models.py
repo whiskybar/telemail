@@ -22,3 +22,15 @@ class NoSpamRecipient(models.Model):
 
     def __unicode__(self):
         return self.address
+
+
+class Subject(models.Model):
+    subject = models.CharField(max_length=100, unique=True)
+    
+    class Meta:
+        ordering = ['subject']
+        
+    def __unicode__(self):
+        return self.subject
+
+
