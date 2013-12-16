@@ -1,0 +1,15 @@
+- fields:
+    date_joined: 2013-12-16 18:36:23.506379+00:00
+    email: info@tele3.cz
+    first_name: ''
+    groups: []
+    is_active: true
+    is_staff: true
+    is_superuser: true
+    last_login: 2013-12-16 18:36:23.506379+00:00
+    last_name: ''
+    password: pbkdf2_sha256$12000$GXY5sVYJRy01$TwdCiZqWpBNPRIeJ+QdwpSehNH844lsne6HJE5h0DsY=
+    user_permissions: []
+    username: root
+  model: auth.user
+  pk: 1
