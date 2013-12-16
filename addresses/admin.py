@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib import admin
-from addresses.models import Account
+from addresses.models import Account, Alias, Forward
 
 
 class AccountForm(forms.ModelForm):
@@ -15,3 +15,17 @@ class AccountAdmin(admin.ModelAdmin):
     search_fields = ['address']
 
 admin.site.register(Account, AccountAdmin)
+
+
+class AliasAdmin(admin.ModelAdmin):
+    list_display = ('source', 'destination')
+    search_fields = ['source', 'destination']
+
+admin.site.register(Alias, AliasAdmin)
+
+
+class ForwardAdmin(admin.ModelAdmin):
+    list_display = ('source', 'destination')
+    search_fields = ['source', 'destination']
+
+admin.site.register(Forward, ForwardAdmin)
