@@ -1,5 +1,5 @@
 from django.db import models
-from addresses.fields import PasswordCharField
+from telemail.addresses.fields import PasswordCharField
 
 
 class Account(models.Model):

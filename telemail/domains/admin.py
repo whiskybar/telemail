@@ -1,5 +1,5 @@
 from django.contrib import admin
-from domains.models import DomainTrash
+from telemail.domains.models import DomainTrash
 
 
 class DomainTrashAdmin(admin.ModelAdmin):

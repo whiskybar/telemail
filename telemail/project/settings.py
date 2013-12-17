@@ -36,9 +36,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'domains',
-    'addresses',
-    'spam',
+    'telemail.domains',
+    'telemail.addresses',
+    'telemail.spam',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -50,9 +50,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'telemail.urls'
+ROOT_URLCONF = 'telemail.project.urls'
 
-WSGI_APPLICATION = 'telemail.wsgi.application'
+WSGI_APPLICATION = 'telemail.project.wsgi.application'
 
 
 # Database

@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib import admin
-from addresses.models import Account, Alias, Forward
+from telemail.addresses.models import Account, Alias, Forward
 
 
 class AccountForm(forms.ModelForm):

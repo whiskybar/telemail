@@ -1,5 +1,5 @@
 from django.contrib import admin
-from spam.models import NoSpamHost, NoSpamRecipient, Subject
+from telemail.spam.models import NoSpamHost, NoSpamRecipient, Subject
 
 
 class NoSpamHostAdmin(admin.ModelAdmin):
