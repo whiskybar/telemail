@@ -23,7 +23,7 @@ setup(
 
     packages = find_packages(),
     package_data = {
-        '': ['fixtures/*.yaml'],
+        '': ['fixtures/*.yaml', 'templates/*/*.html],
     },
     include_package_data = True,
 
