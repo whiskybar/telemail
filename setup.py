@@ -22,6 +22,10 @@ setup(
     license = 'BSD',
 
     packages = find_packages(),
+    package_data = {
+        '': ['fixtures/*.yaml'],
+    },
+    include_package_data = True,
 
     classifiers = [
         'Development Status :: 3 - Alpha',
