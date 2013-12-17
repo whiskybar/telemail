@@ -17,8 +17,8 @@ class NoSpamRecipient(models.Model):
     
     class Meta:
         ordering = ['address']
-        verbose_name = 'whitelist address'
-        verbose_name_plural = 'whitelist addresses'
+        verbose_name = 'whitelisted address'
+        verbose_name_plural = 'whitelisted addresses'
 
     def __unicode__(self):
         return self.address
