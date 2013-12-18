@@ -68,7 +68,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'cz'
 
 TIME_ZONE = 'Europe/Prague'
 
@@ -78,6 +78,7 @@ USE_L10N = True
 
 USE_TZ = False
 
+LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale'),)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/

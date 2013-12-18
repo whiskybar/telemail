@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib import admin
+from django.utils.translation import ugettext_lazy as _
 from telemail.addresses.models import Account, Alias, Other, Forward, ForwardedAddress
 
 
@@ -19,8 +20,8 @@ admin.site.register(Account, AccountAdmin)
 
 class OtherInline(admin.TabularInline):
     model = Other
-    verbose_name = 'alias'
-    verbose_name_plural = 'aliases'
+    verbose_name = _('alias')
+    verbose_name_plural = _('aliases')
 
 class AliasAdmin(admin.ModelAdmin):
     list_display = ('address', 'others')
@@ -28,7 +29,7 @@ class AliasAdmin(admin.ModelAdmin):
 
     def others(self, obj):
         return ', '.join(d.alias for d in obj.aliases.all())
-    others.short_description = 'aliases'
+    others.short_description = _('aliases')
 
     inlines = [OtherInline]
 
@@ -37,8 +38,8 @@ admin.site.register(Alias, AliasAdmin)
 
 class ForwardedAddressInline(admin.TabularInline):
     model = ForwardedAddress
-    verbose_name = 'address'
-    verbose_name_plural = 'forward to'
+    verbose_name = _('address')
+    verbose_name_plural = _('forward to')
 
 class ForwardAdmin(admin.ModelAdmin):
     list_display = ('address', 'forward_to')
@@ -46,7 +47,7 @@ class ForwardAdmin(admin.ModelAdmin):
    
     def forward_to(self, obj):
         return ', '.join(d.destination for d in obj.destinations.all())
-    forward_to.short_description = 'forward to'
+    forward_to.short_description = _('forward to')
     
     inlines = [ForwardedAddressInline]
 

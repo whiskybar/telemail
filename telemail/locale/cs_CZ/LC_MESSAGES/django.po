@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-18 03:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: addresses/admin.py:23 addresses/models.py:24
+msgid "alias"
+msgstr "alias"
+
+#: addresses/admin.py:24 addresses/admin.py:32 addresses/models.py:25
+msgid "aliases"
+msgstr "aliasy"
+
+#: addresses/admin.py:41 addresses/models.py:7 addresses/models.py:20
+#: addresses/models.py:32 addresses/models.py:41 addresses/models.py:53
+#: spam/models.py:18
+msgid "address"
+msgstr "adresa"
+
+#: addresses/admin.py:42 addresses/admin.py:50
+msgid "forward to"
+msgstr "přeposlat na"
+
+#: addresses/models.py:8
+msgid "password"
+msgstr "heslo"
+
+#: addresses/models.py:8
+msgid "leave blank for no change"
+msgstr "ponechte prázdné, pokud nechcete měnit heslo"
+
+#: addresses/models.py:12
+msgid "account"
+msgstr "účet"
+
+#: addresses/models.py:13
+msgid "accounts"
+msgstr "účty"
+
+#: addresses/models.py:45
+msgid "forward"
+msgstr "přeposlat"
+
+#: addresses/models.py:46
+msgid "forwards"
+msgstr "přeposlání"
+
+#: domains/models.py:6
+msgid "domain"
+msgstr "doména"
+
+#: domains/models.py:7
+msgid "default email"
+msgstr "doménový koš"
+
+#: domains/models.py:11
+msgid "domain trash"
+msgstr "doménový koš"
+
+#: domains/models.py:12
+msgid "domain trashes"
+msgstr "doménové koše"
+
+#: spam/models.py:6
+msgid "host"
+msgstr "server"
+
+#: spam/models.py:6
+msgid "sending host not checked for spam"
+msgstr "zprávy z toho serveru nebudou kontrolovány"
+
+#: spam/models.py:10
+msgid "trusted host"
+msgstr "důvěryhodný server"
+
+#: spam/models.py:11
+msgid "trusted hosts"
+msgstr "důvěryhodné servery"
+
+#: spam/models.py:18
+msgid "address not checked for spam"
+msgstr "zprávy na tuto adresu nebudou kontrolovány"
+
+#: spam/models.py:22
+msgid "whitelisted address"
+msgstr "nekontrolovaný příjemce"
+
+#: spam/models.py:23
+msgid "whitelisted addresses"
+msgstr "nekontrolovaní příjemci"
+
+#: spam/models.py:30 spam/models.py:34
+msgid "subject"
+msgstr "předmět zprávy"
+
+#: spam/models.py:30
+msgid "considered spam"
+msgstr "bude považován za reklamu (vrácen)"
+
+#: spam/models.py:35
+msgid "subjects"
+msgstr "předměty zpráv"
+
+#: templates/admin/base_site.html:4
+msgid "Email admin"
+msgstr "Email admin"
+
+#: templates/admin/base_site.html:7
+msgid "Email administration"
+msgstr "Email administrace"
