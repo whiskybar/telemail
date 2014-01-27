@@ -45,11 +45,11 @@ msgstr "ponechte prázdné, pokud nechcete měnit heslo"
 
 #: addresses/models.py:12
 msgid "account"
-msgstr "účet"
+msgstr "mailový účet"
 
 #: addresses/models.py:13
 msgid "accounts"
-msgstr "účty"
+msgstr "mailové účty"
 
 #: addresses/models.py:45
 msgid "forward"
