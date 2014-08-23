@@ -29,7 +29,7 @@ class Alias(models.Model):
 
 class Other(models.Model):
     origin = models.ForeignKey(Alias, related_name='aliases')
-    alias = models.EmailField(max_length=254, verbose_name=_('address'))
+    alias = models.CharField(max_length=254, verbose_name=_('address'))
 
     class Meta:
         ordering = ['alias']
