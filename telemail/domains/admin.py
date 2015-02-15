@@ -10,4 +10,4 @@ class DomainTrashAdmin(admin.ModelAdmin):
 
 admin.site.register(DomainTrash, DomainTrashAdmin)
 
-admin.site.unregister(Group)
+#admin.site.unregister(Group)
