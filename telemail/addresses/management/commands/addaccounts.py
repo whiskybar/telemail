@@ -2,6 +2,7 @@ import sys
 import getpass
 from django.core.management.base import BaseCommand
 from telemail.addresses.models import Account
+from telemail.addresses.fields import encode_password
 
 
 class Command(BaseCommand):
@@ -14,7 +15,7 @@ class Command(BaseCommand):
         except ValueError:
             password = getpass.getpass('Enter password for the address "%s": ' % address)
         account, created = Account.objects.get_or_create(address=address)
-        account.password = password
+        account.password = encode_password(password)
         account.save()
 
     def handle(self, *args, **options):
