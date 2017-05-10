@@ -13,7 +13,7 @@ class AccountForm(forms.ModelForm):
         widgets = {
                 'password': forms.PasswordInput(render_value=False),
         }
-        
+
 class AccountAdmin(admin.ModelAdmin):
     form = AccountForm
     search_fields = ['address']
@@ -46,7 +46,7 @@ class OtherInline(admin.TabularInline):
 
 class AliasAdmin(admin.ModelAdmin):
     list_display = ('address', 'others')
-    search_fields = ['address', 'aliases_alias']
+    search_fields = ['address', 'aliases__alias']
 
     def others(self, obj):
         return ', '.join(d.alias for d in obj.aliases.all())
@@ -65,11 +65,11 @@ class ForwardedAddressInline(admin.TabularInline):
 class ForwardAdmin(admin.ModelAdmin):
     list_display = ('address', 'forward_to')
     search_fields = ['address', 'destinations__destination']
-   
+
     def forward_to(self, obj):
         return ', '.join(d.destination for d in obj.destinations.all())
     forward_to.short_description = _('forward to')
-    
+
     inlines = [ForwardedAddressInline]
 
 admin.site.register(Forward, ForwardAdmin)
