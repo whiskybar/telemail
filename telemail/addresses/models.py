@@ -6,7 +6,7 @@ from telemail.addresses.fields import PasswordCharField
 class Account(models.Model):
     address = models.EmailField(max_length=254, unique=True, verbose_name=_('address'))
     password = PasswordCharField(max_length=130, blank=True, verbose_name=_('password'), help_text=_('leave blank for no change'))
-    
+
     class Meta:
         ordering = ['address']
         verbose_name = _('account')
@@ -18,7 +18,7 @@ class Account(models.Model):
 
 class Alias(models.Model):
     address = models.EmailField(max_length=254, unique=True, verbose_name=_('address'))
-    
+
     class Meta:
         ordering = ['address']
         verbose_name = _('alias')
@@ -39,7 +39,7 @@ class Other(models.Model):
 
 class Forward(models.Model):
     address = models.EmailField(max_length=254, unique=True, verbose_name=_('address'))
-    
+
     class Meta:
         ordering = ['address']
         verbose_name = _('forward')
