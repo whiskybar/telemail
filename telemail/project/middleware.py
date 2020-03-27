@@ -1,11 +1,8 @@
+from django.contrib.auth.models import Permission
+
 class DomainMiddleware(object):
     def process_request(self, request):
-        try:
-            user, domain = request.user.username.split('@', 1)
-        except ValueError:
-            request.domain = ''
+        if request.user.username.startswith('admin@'):
+            request.domain = request.user.username[6:]
         else:
-            if user == 'admin':
-                request.domain = domain
-            else:
-                request.domain = ''
+            request.domain = ''
